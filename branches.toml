@@ -1,0 +1,57 @@
+# ============================================
+# تنظیمات شعب - Holoo Branch Manager
+# ============================================
+# این فایل را کنار فایل اجرایی برنامه قرار دهید
+# هر شعبه یک [[branches]] جداگانه دارد
+# ============================================
+
+# تنظیمات عمومی
+[settings]
+api_key = "holoo_api_secret_key_2024"  # کلید API - باید با holoo_api.py یکسان باشد
+timeout = 30                            # تایم‌اوت درخواست (ثانیه)
+retry_count = 3                         # تعداد تلاش مجدد در صورت خطا
+
+# ============================================
+# شعب
+# ============================================
+
+[[branches]]
+name = "شعبه مرکزی"
+ip = "192.168.1.10"
+database = "Holoo_Main"
+user = "sa"
+password = "your_password_here"
+port = 7480
+
+[[branches]]
+name = "شعبه شمال"
+ip = "192.168.2.10"
+database = "Holoo_North"
+user = "sa"
+password = "your_password_here"
+port = 7480
+
+[[branches]]
+name = "شعبه جنوب"
+ip = "192.168.3.10"
+database = "Holoo_South"
+user = "sa"
+password = "your_password_here"
+port = 7480
+
+[[branches]]
+name = "شعبه شرق"
+ip = "192.168.4.10"
+database = "Holoo_East"
+user = "sa"
+password = "your_password_here"
+port = 7480
+
+# برای اضافه کردن شعبه جدید، این بلوک را کپی کنید:
+# [[branches]]
+# name = "نام شعبه"
+# ip = "آدرس IP سرور"
+# database = "نام دیتابیس"
+# user = "نام کاربری SQL"
+# password = "رمز عبور"
+# port = 7480

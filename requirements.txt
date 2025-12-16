@@ -1,0 +1,15 @@
+# ============================================
+# Holoo Branch Manager - Dependencies
+# ============================================
+
+# API Server (holoo_api.py)
+Flask>=2.0.0
+pyodbc>=4.0.30
+requests>=2.25.0
+
+# Desktop App (branch_manager.py)
+PyQt5>=5.15.0
+toml>=0.10.0
+
+# Utilities
+python-dateutil>=2.8.0
